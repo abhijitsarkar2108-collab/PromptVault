@@ -1,1 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PromptVault</title>
 
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+
+    <header>
+        <h1>🧠 PromptVault</h1>
+        <p>Store & Manage Your AI Prompts</p>
+    </header>
+
+    <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search Prompt...">
+    </div>
+
+    <div class="card">
+
+        <input
+        type="text"
+        id="title"
+        placeholder="Prompt Title">
+
+        <textarea
+        id="prompt"
+        placeholder="Write your prompt here..."
+        rows="8"></textarea>
+
+        <button id="saveBtn">
+            Save Prompt
+        </button>
+
+    </div>
+
+    <h2>Saved Prompts</h2>
+
+    <div id="promptList"></div>
+
+</div>
+
+
+<!-- Popup -->
+
+<div id="popup" class="popup">
+
+<div class="popup-content">
+
+<span id="closePopup">&times;</span>
+
+<h2 id="popupTitle"></h2>
+
+<textarea
+id="popupPrompt"
+readonly></textarea>
+
+<div class="popup-buttons">
+
+<button id="copyBtn">
+📋 Copy
+</button>
+
+<button id="editBtn">
+✏️ Edit
+</button>
+
+<button id="deleteBtn">
+🗑 Delete
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+  </html>
